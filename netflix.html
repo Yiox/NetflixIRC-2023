@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="ressources/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="netflix.css">               
+</head>
+<body>
+    
+   
+    
+    <header class="header">
+        <div class="header-top">
+            <img alt="Netflix Logo" src="ressources/logo.png">
+            <button class="btn">S'identifier</button>
+        </div>
+
+        <div class="header-content">
+            <h1>Film, séries TV et bien <br> plus en illimité</h1>
+            <p>Ou que vous soyez. Annulez à tout moment</p>
+            <p>Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre abonnement</p>
+
+            <div class="get-started">
+                <input type="email" placeholder="Adresse e-mail" required="required">
+                <button onclick="valider_email()">Commencer</button>
+            </div>
+        </div>
+    </header>
+
+    
+
+    <!-- INSEREZ LES SECTIONS DU SITE SOUS CETTE LIGNE -->
+
+    <section class="enjoy">
+        <div class="enjoy-content">
+            <h1>Regardez Netflix sur votre TV.</h1>
+            <p>Regardez Netflix sur votre Smart TV, Playstation, Xbox, Chromcast, Apple TV, lecteurs Blu-ray et bien plus.</p>
+        </div>
+
+        <div class="enjoy-video">
+            <img alt="Netflix TV" src="ressources/tv.png">
+            <video autoplay muted loop src="ressources/video-tv.m4v" type="video/mp4"></video>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="download">
+        <div class="download-mobile">
+            <img src="ressources/mobile.jpg">
+            <div class="box">
+                <img src="ressources/boxshot.png">
+                <div>
+                    <p class="stranger">Stranger Things</p>
+                    <p class="dwnd">Téléchargement en cours ...</p>
+                </div>
+                <img src="ressources/progress.gif" id="gif-loading">
+            </div>
+        </div>
+
+        <div class="download-content">
+            <h1>Téléchargez vos séries préférées pour les regarder hors connexion.</h1>
+            <p>Regardez Netflix sur votre Smart TV, PlayStation, Xbox, Chromecast, Apple TV, lecteurs Blu-ray et bien plus.</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="stream">
+        
+        <div class="stream-content">
+            <h1>Où que vous soyez.</h1>
+            <p>Regardez des films et séries TV en accès illimité sur votre TV, Smartphone, tablette et ordinateur, tout compris</p>
+        </div>
+
+        <div class="stream-video">
+            <img src="ressources/tv2.png">
+            <video autoplay muted loop src="ressources/video-tv2.m4v" type="video/mp4"></video>
+        </div>
+       
+    </section>
+
+    <hr>
+
+    <section class="kids">
+        <div class="kids-img">
+            <img src="ressources/kids.jpg">
+        </div>
+        <div class="kids-content">
+            <h1>Créez des profils pour les enfants.</h1>
+            <p>Les enfants découvrent de nouvelles aventures et retrouvent leurs personnages préférés dans un espace bien à eux, déjà inclus dans votre abonnement.</p>
+        </div>
+        
+    </section>
+
+    <hr>
+    
+    <section class="faq">
+        <h1>Foire aux questions</h1>
+        <div class="questions" id="questions">
+            <template id="template">
+                <span>
+                    <button type="button">{{question}}<span onclick="toggle(this.id)" id="{{q_id}}">+</span></button>
+                    <div class="faq-answer closed" id="{{ans_id}}">
+                        {{reponse}}
+                    </div>
+                </span>
+            </template>
+        </div>        
+    </section>
+
+    <hr>
+
+    <!-- INSEREZ LE PIED DE PAGE SOUS CETTE LIGNE -->
+    <footer class="footer">
+        <p>Des questions ? Appelez le <a href="tel:+330805543063">(+33) 0805-543-063</a></p>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Relations Investisseurs</a></li>
+                <li><a href="#">Modes de lecture</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Seulement sur Netflixs</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Centre d'aide</a></li>
+                <li><a href="#">Recrutement</a></li>
+                <li><a href="#">Conditions d'utilisation</a></li>
+                <li><a href="#">Nous contacters</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Compte</a></li>
+                <li><a href="#">Utiliser des cartes cadeaux</a></li>
+                <li><a href="#">Confidentialité</a></li>
+                <li><a href="#">Test de vitesse</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Presse</a></li>
+                <li><a href="#">Acheter des cartes cadeaux</a></li>
+                <li><a href="#">Préférences de cookies</a></li>
+                <li><a href="#">Informations légales</a></li>
+            </ul>
+        </div>
+        <div class="netflix-location">
+            <a><i class="fas fa-globe btn-icon"></i>Français<i class="fas fa-caret-down btn-icon"></i></a>
+            <p>Netflix France</p>
+        </div>
+
+        </div>
+    </footer>
+    
+    <!-- INSEREZ LE PIED DE PAGE AU-DESSUS DE CETTE LIGNE -->
+    <script src="netflix.js"></script>
+</body>
+</html>

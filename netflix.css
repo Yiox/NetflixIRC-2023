@@ -1,0 +1,565 @@
+header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 40px 30px 100px #000,
+                inset -40px -30px 100px #000;
+}
+
+/***** INSERER VOTRE CODE CSS CI-DESSOUS *****/
+
+body{
+    background: #000;
+    font-family: 'Netflix Sans', sans-serif;
+    color: #fff;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 1.1em;
+}
+
+p{
+    margin-top: 0.5rem ;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+section{
+    /*chaque section occupe par défaut 75% de la largeur de l’écran, sans dépasser 1100 pixels*/
+    max-width: 1100px;
+    width: 75%;
+
+    /*chaque section doit être centrée horizontalement*/
+    margin: 0 auto;
+
+    /*le contenu de chaque section est disposé selon une grille, composée en réalité de deux
+    colonnes de tailles identiques, séparées par un espace de 70 pixels*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 70px;
+
+    /*les items doivent être alignés au centre (verticalement) de la section*/
+    align-items: center;
+}
+
+
+.header{
+    /* sa hauteur doit occuper toute la hauteur du viewport (vh) */
+    height: 100vh;
+
+    /* L’image de fond est bg.jpg ; elle doit être centrée, recouvrir tout l’écran, sans se répéter*/
+    background-image: url("./ressources/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.header h1{
+    font-size: 4rem;
+    padding-bottom: 1.1;
+}
+.header p:nth-child(2){
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 1.1rem;
+}
+.header p:nth-child(3){
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+    max-width: 900px;
+}
+
+.header input{
+    height: 58px;
+    width: 450px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Mise en page du bandeau supérieur du header-top */
+
+.header-top{
+    height: 92px;
+}
+
+.header-top img{
+    /* 
+    largeur : 200 pixels
+    position absolue : à 0 pixel du haut et 40 pixels à gauche 
+    */
+    width: 200px;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}
+
+.header-top button{
+    /* 
+    position absolue : à 30 pixels du haut et 50 pixels à droite
+    */
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}
+
+
+/***** INSERER VOTRE CODE CSS CI-DESSUS *****/
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 300;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 900;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr{
+    height: 5px;
+    width: 100%;
+    border: none;
+    background: #222;
+}
+
+.btn{
+    display: inline-block;
+    background: #e50914;
+    color: #fff;
+    padding: 7px 17px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    height: 32px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    letter-spacing: 0.4px;
+    transition: .7s;
+}
+
+.get-started{
+    position: relative;
+    display: flex;
+}
+
+.get-started button{
+    margin-right: 10px;
+    font-size: 30px;
+    height: 58px;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 0;
+}
+
+button {
+    color: #fff;
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: #fa2f33;
+    color: #fff;
+}
+
+.header-top{
+    z-index: 2;
+    position: relative;
+}
+
+.header-content{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+input{
+    height: 58px;
+    padding: 5px 10px 0;
+    width: 45%;
+    font-size: 16px;
+    border: none;
+}
+*/
+
+
+/*=== SECTION 2 : ENJOY / REGARDER NETFLIX === */
+
+
+.enjoy{
+    height: 480px;
+}
+
+.enjoy-content{
+    max-width: 700px;
+    width: 100%;
+    padding-right: 10px;
+    letter-spacing: 0.1px;
+}
+
+.enjoy-content p{
+    margin-top: 10px;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.enjoy-video{
+    position: relative;
+}
+
+.enjoy-video img{
+    z-index: 1;
+    height: 380px;
+    width: 520px;
+    position: relative;
+}
+
+.enjoy-video video{
+    position: absolute;
+    bottom: 50px;
+    left: 68px;
+    z-index: -1;
+}
+
+.enjoy-video video{
+    display: inline-block;
+    vertical-align: baseline;
+    width: 380px;
+    height: 300px;
+}
+
+/*=== SECTION 3 : DOWNLOADS / TELECHARGEZ === */
+
+.download{
+    height: 480px;
+}
+
+.download-content{
+    max-width: 700px;
+    letter-spacing: 0.1px;
+}
+
+.download-content p{
+    margin-top: 10px;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.download-mobile{
+    position: relative;
+}
+
+.download-mobile img{
+    height: 380px;
+    width: 520px;
+}
+
+.box{
+    position: absolute;
+    bottom: 30px;
+    left: 100px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    border: 3px solid #222;
+    border-radius: 14px;
+    width: 350px;
+    height: 100px;
+    background: #000;
+}
+
+.box img{
+    width: 50px;
+    height: 70px;
+}
+
+#stranger{
+    padding-top: 13px;
+    font-size: 16px;
+    height: 25px;
+}
+
+#dwnd{
+    font-size: 14px;
+    color: #0071eb;
+}
+
+#gif-loading{
+    width: 60px;
+    height: 60px;
+}
+
+/*=== SECTION 4 : STREAM / OU QUE VOUS SOYEZ === */
+
+.stream{
+    height: 480px;
+}
+
+.stream-content p{
+    margin-top: 10px;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.stream-video{
+    position: relative;
+}
+
+.stream-video img{
+    z-index: 1;
+    height: 380px;
+    width: 520px;
+    position: relative;
+}
+
+.stream-video video{
+    position: absolute;
+    bottom: 60px;
+    right: 102px;
+    z-index: -1;
+}
+
+.stream-video video{
+    vertical-align: baseline;
+    width: 320px;
+    height: 400px;
+}
+
+/*=== SECTION 4 : KIDS / ENFANTS === */
+
+.kids {
+    height: 520px;
+}
+
+.kids-img img{
+    height: 380px;
+    width: 520px;
+    position: relative;
+}
+
+.kids-content{
+    max-width: 700px;
+    width: 100%;
+    padding-right: 10px;
+    letter-spacing: 0.1px;
+}
+
+.kids-content p{
+    margin-top: 10px;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+/*=== SECTION 5 : FAQ === */
+
+
+.faq{
+    display: block;
+    padding: 70px 140px;
+}
+
+.faq h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.faq .questions button{
+    width: 100%;
+    line-height: 200%;
+    text-align: left;
+    padding: 16px 24px 16px 24px;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 10px;
+    background: #303030;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+
+.sec{
+    display: flex;
+    justify-content: center;
+}
+
+.questions button span{
+    float: right;
+    font-family: inherit;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.faq-answer{
+    padding: 30px 40px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: -8px;
+    color: #fff;
+    background: #303030;
+    text-align: left;
+}
+
+.closed{
+    display: none !important;
+}
+
+.rotate{
+    transform: rotate(45deg);
+}
+
+.get-started{
+    position: relative;
+    display: flex;
+}
+
+.get-started input{
+    height: 58px;
+    padding: 0 10px 0;
+    width: 450px;
+    font-size: 16px;
+    outline: none;
+    border-right: 1.5px solid rgb(105, 102, 102);
+}
+
+.gs{
+    display: flex;
+    padding: 0 30px 0 30px;
+    background: #e50914;
+    cursor: pointer;
+}
+
+.gs i{
+    display: flex;
+    align-items: center;
+    background: #e50914;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.p-b{
+    text-align: center;
+    font-size: 16.3px;
+    letter-spacing: 0.02em;
+    margin-top: 3rem;
+    margin-bottom: 1.2rem;
+}
+
+/* === FOOTER === */
+
+
+.footer{
+    max-width: 900px;
+    margin: 70px auto;
+}
+
+.footer a{
+    color: #888;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.footer p{
+    color: #888;
+    margin-bottom: 2rem;
+}
+
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4rem;
+}
+
+.footer li{
+    line-height: 1.9;
+    list-style: none;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.netflix-location{
+    margin-top: 40px;
+}
+
+.netflix-location a{
+    padding: 15px 10px;
+    border: 1px solid #303030
+}
+
+.netflix-location p{
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.btn-icon{
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* === END === */

@@ -1,0 +1,26 @@
+[
+    {
+        "question": "Netflix, qu'est-ce que c'est ?",
+        "reponse": "Netflix est un service de streaming qui propose une vaste sélection de séries TV, films, animes, documentaires et autres programmes primés sur des milliers d'appareils connectés à Internet.<br><br>Regardez tout ce que vous voulez, quand vous voulez, sans publicité et à un tarif mensuel très attractif. Découvrez de nouveaux films et séries TV chaque semaine, il y en a pour tous les goûts !"
+    },
+
+    {
+        "question": "Combien coûte Netflix ?",
+        "reponse": "Regardez Netflix sur votre smartphone, tablette, Smart TV, ordinateur ou appareil de streaming, le tout pour un tarif mensuel fixe. Les forfaits vont de 7,99 € à 15,99 € par mois. Pas de contrat ni de frais supplémentaires."
+    },
+
+    {
+        "question": "Où puis-je regarder Netflix ?",
+        "reponse": "Regardez où et quand vous voulez, sur un nombre illimité d'appareils. Connectez-vous à votre compte pour regarder Netflix en ligne sur netflix.com depuis votre ordinateur ou tout appareil connecté à Internet avec l'application Netflix, comme les Smart TV, smartphones, tablettes, lecteurs de streaming et consoles de jeu.<br><br>Vous pouvez aussi télécharger vos séries préférées avec l'application iOS, Android ou Windows 10. Téléchargez des titres pour les regarder sur votre appareil mobile, même sans connexion Internet. Emportez Netflix partout avec vous."
+    },
+
+    {
+        "question": "Comment puis-je annuler mon forfait ?",
+        "reponse": "Netflix offre une grande souplesse. Pas de contrat compliqué. Sans engagement. Deux clics suffisent pour annuler votre compte en ligne. Pas de frais d'annulation : ouvrez ou fermez votre compte à tout moment."
+    },
+
+    {
+        "question": "Que puis-je regarder sur Netflix ?",
+        "reponse": "Netflix propose un vaste catalogue comprenant notamment des longs métrages, des documentaires, des séries TV, des animes et des programmes originaux Netflix primés. Regardez Netflix à volonté, quand vous le voulez."
+    }
+]
